@@ -1,0 +1,54 @@
+@import '../../../sass/main'
+
+// lobo
+.logo-block 
+    width: 461px
+    margin-top: 30px
+    img 
+        height: 40px
+        margin-right: 18px
+    h1 
+        text-transform: uppercase
+        color: #0263C5
+        font-size: 30px
+        font-weight: normal
+
+.navbar 
+    width: 1458px
+    height: 240px
+    background-image: url(../../../images/header.png)
+    background-position: top
+    background-repeat: no-repeat
+    background-size: contain
+    > div 
+        margin-top: 35px
+    ul 
+        width: 815px
+        margin-top: 0
+        margin-left: 112px
+        padding: $padding0
+        li 
+            a 
+                color: $light
+                text-transform: $capitalize
+                font-family: 'Muli-Regular'
+                &.navbar__link--active 
+                    border-bottom: 4px solid  #00E4E4
+                    transition: border-bottom .5s ease-in-out
+                    padding-bottom: 10px
+                    
+    a 
+        &.callTo 
+            margin-left: 80px
+    .langs 
+        margin-left: 89px
+        color: $light
+        width: 50px
+        button 
+            border: none
+            outline: none
+            color: $light
+            background: none
+            cursor: $pointer
+            font-size: 14px
+            padding: $padding0

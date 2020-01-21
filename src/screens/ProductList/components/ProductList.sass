@@ -1,0 +1,50 @@
+@import '../../../sass/main'
+
+
+.productTable 
+    text-align: $center
+    margin-top: 14px
+    border-collapse: separate
+    border-spacing: 0 12px
+    tr 
+        border-radius: 6px
+        td 
+            position: $relative
+            &:after 
+                content: ""
+                border-right: 2px solid #A5ADBF
+                height: 50px
+                position: absolute
+                top: 25px
+                right: 0
+            &:last-child
+                &:after
+                    border-right: none
+    thead 
+        background: $light
+        margin-bottom: 22px
+        tr 
+            font-size: 18px
+            color: $dark
+            height: 50px
+            margin-bottom: 22px
+            border-radius: 6px
+    tbody 
+        background: $light
+        tr 
+            border-radius: 6px
+            height: 100px
+            td 
+                color: $dark
+            .prodBtn 
+                width: 233px
+                height: 45px
+                border: 0.5px solid #A5ADBF
+                border-radius: 9px
+                color: $dark
+                transform: transition .3s ease
+        tr:hover 
+            box-shadow: 0px 3px 6px #00000029
+            .prodBtn 
+                background: transparent linear-gradient(89deg, #0263C5 0%, #00B9FF 58%, #00E4E4 100%) 0% 0% no-repeat padding-box
+                color: $light

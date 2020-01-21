@@ -1,0 +1,96 @@
+@import '../../../sass/main'
+
+.tabs 
+    margin-top: 200px
+    background-image: url(../../../images/tabs.png)
+    background-position: top left
+    background-repeat: no-repeat
+    background-size: contain
+    height: 770px
+    position: relative
+    .tabContainer 
+        display: $dFlex
+        justify-content: $center
+        margin-top: -38px
+        width: 100%
+        .tab1 
+            background-image: url(../../../images/tab_1.png)
+            background-position: center
+            background-repeat: no-repeat
+            background-size: contain
+            height: 115px
+            width: 468px
+            letter-spacing: -1px
+        .tab2 
+            background-image: url(../../../images/tab_2.png)
+            background-position: center
+            background-repeat: no-repeat
+            background-size: contain
+            height: 115px
+            width: 390px
+        .tab3 
+            background-image: url(../../../images/tab_3.png)
+            background-position: center
+            background-repeat: no-repeat
+            background-size: contain
+            height: 115px
+            width: 216px
+        .tab4 
+            background-image: url(../../../images/tab_4.png)
+            background-position: center
+            background-repeat: no-repeat
+            background-size: contain
+            height: 115px
+            width: 238px
+        .tab
+            text-align: center
+            padding-top: 19px
+            padding: 19px 27px 0 18px
+            font-size: 19px
+            color: $dark
+        .tabActive
+            background: url(../../../images/tab_3hov.png)
+            background-position: center
+            background-repeat: no-repeat
+            margin-top: 50px
+            color: $light
+    .tabContent 
+        width: 924px
+        display: flex
+        flex-direction: column
+        align-items: center
+        position: absolute
+        right: 152px
+        top: 200px
+        border: 0.5px solid #A5ADBF
+        .head 
+            height: 97px
+            text-align: $center
+            font-size: 19px
+            color: #373843
+            display: flex
+            justify-content: $center
+            align-items: $center
+        .tabCont
+            width: 100%
+            .row
+                width: 100%
+                border-bottom: 0.5px solid #a5adbf
+                &:first-child
+                    border-top: 0.5px solid #a5adbf
+                &:nth-child(even) 
+                    height: 86px
+                &:nth-child(odd)
+                    height: 94px
+                div 
+                    width: calc(100% - 33.3%)
+                    text-align: $center
+                    border-right: 0.5px solid #a5adbf
+                    color: #373843
+                    font-size: 19px
+                    &:last-child
+                        border-right: 0
+    img 
+        position: $absolute
+        bottom: 81px
+        left: 125px

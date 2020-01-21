@@ -1,0 +1,37 @@
+@import '../../../sass/main'
+
+.aboutBlock 
+    h2 
+        font-size: 35px
+        text-transform: $capitalize
+        padding-bottom: 11px
+        color: $dark
+        position: $relative
+        font-family: 'Mali-SemilBold'
+        &:after
+            content: ""
+            border-bottom: 2px solid $dark
+            width: 98px
+            position: $absolute
+            bottom: 0
+            left: 0
+    .aboutContent
+        p 
+            width: 830px
+            color: $dark
+            font-family: 'Regular 19px/35px Muli'
+            font-size: 19px
+    .animationBlock 
+        width: 722px
+        .img-abs 
+            z-index: -1
+            top: -100px
+            left: 145px
+            width: 550px
+            animation: App-logo-spin infinite 20s linear
+        @keyframes App-logo-spin 
+            from 
+                transform: rotate(0deg)
+            
+            to 
+                transform: rotate(360deg)
