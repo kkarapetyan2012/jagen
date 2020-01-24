@@ -9,9 +9,12 @@ const About = () => {
             <div className="center">
                 <Company />
             </div>
+            
             <div className="slider demo-carousel">
                 <Carusel />
             </div>
+            
+            
             <div className="center">
                 <div className="bottom-callTo">
                     <a className="callTo" href="tel:+79991264417">

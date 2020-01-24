@@ -9,60 +9,64 @@
     height: 770px
     position: relative
     .tabContainer 
-        display: $dFlex
-        justify-content: $center
         margin-top: -38px
         width: 100%
-        .tab1 
-            background-image: url(../../../images/tab_1.png)
-            background-position: center
-            background-repeat: no-repeat
-            background-size: contain
-            height: 115px
-            width: 468px
-            letter-spacing: -1px
-        .tab2 
-            background-image: url(../../../images/tab_2.png)
-            background-position: center
-            background-repeat: no-repeat
-            background-size: contain
-            height: 115px
-            width: 390px
-        .tab3 
-            background-image: url(../../../images/tab_3.png)
-            background-position: center
-            background-repeat: no-repeat
-            background-size: contain
-            height: 115px
-            width: 216px
-        .tab4 
-            background-image: url(../../../images/tab_4.png)
-            background-position: center
-            background-repeat: no-repeat
-            background-size: contain
-            height: 115px
-            width: 238px
-        .tab
+        .tab 
+            height: 130px
             text-align: center
             padding-top: 19px
             padding: 19px 27px 0 18px
             font-size: 19px
             color: $dark
-        .tabActive
-            background: url(../../../images/tab_3hov.png)
-            background-position: center
+            white-space: pre-line
+            border-radius: 6px
+            background-position: center !important
             background-repeat: no-repeat
+            margin-left: 15px
+        .tab:nth-child(1) 
+            background-image: url(../../../images/tab_1.png)
+            width: 468px
+            margin-left: 0
+        .tab:nth-child(2) 
+            background-image: url(../../../images/tab_2.png)
+            width: 390px
+        .tab:nth-child(3) 
+            background-image: url(../../../images/tab_3.png)
+            width: 216px
+        .tab:nth-child(4) 
+            background-image: url(../../../images/tab_4.png)
+            width: 238px
+        .tab:nth-child(5) 
+            background-image: url(../../../images/tab_4.png)
+            width: 238px
+            
+        .RRT__tab 
+            background-color: unset
+            border: none
+        .RRT__tab--selected 
             margin-top: 50px
+        .RRT__tab--selected:nth-child(1)
+            background: url(../../../images/tab_1hov.png)
             color: $light
+        .RRT__tab--selected:nth-child(2)
+            background: url(../../../images/tab_2hov.png)
+            color: $light
+        .RRT__tab--selected:nth-child(3)
+            background: url(../../../images/tab_3hov.png)
+            color: $light
+        .RRT__tab--selected:nth-child(4)
+            background: url(../../../images/tab_4hov.png)
+            color: $light
+        .RRT__tab--selected:nth-child(5)
+            background: url(../../../images/tab_4hov.png)
+            color: $light
+    
+    .RRT__panel 
+        width: 100%
+        max-width: 924px
+        margin: 39px auto
+        padding: 0
     .tabContent 
-        width: 924px
-        display: flex
-        flex-direction: column
-        align-items: center
-        position: absolute
-        right: 152px
-        top: 200px
-        border: 0.5px solid #A5ADBF
         .head 
             height: 97px
             text-align: $center

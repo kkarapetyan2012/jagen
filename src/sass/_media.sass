@@ -1,52 +1,369 @@
 @import "vars"
 
-/*==========  Desktop First  ==========*/
+
+@media only screen and (max-width: $mediaExtraLargWidth)
+	.aboutBlock 
+		.aboutContent 
+			p
+				width: 100%
+				max-width: 830px
+	.aboutBlock 
+		.animationBlock
+			width: 650px
+			img 
+				&:first-child
+					width: 500px
+			.img-abs 
+				width: 410px
+				top: -30px
+
+	.carousel 
+		.slide 
+			.legend
+				top: 140px
+			span 
+				top: 170px
+				width: 650px
+			.mini 
+				top: 170px
+			.mini2 
+				bottom: 250px
+				left: 440px
+				display: none
+	
+
+@media only screen and (max-width: $mediaLargWidth)
+	.navbar 
+		ul 
+			margin-left: 50px
+			li 
+				a
+				 padding: 5px 10px
+		a.callTo
+			margin-left: 0
+		.langs 
+    		margin-right: 50px
+	.fish , .fish-abs
+		display: none
+
+	.aboutBlock 
+		h2 
+			margin-left: 10px
+		.aboutContent 
+			padding: 0 10px
+			p
+				width: 100%
+				max-width: 720px
+
+	.aboutBlock 
+		.animationBlock
+			width: 650px
+			img 
+				&:first-child
+					width: 500px
+			.img-abs 
+				width: 410px
+				top: -30px
+
+	.carousel 
+		.slide 
+			.legend
+				top: 100px
+				left: 200px
+			span 
+				top: 120px
+				width: 520px
+				left: 200px
+			.mini 
+				top: 120px
+				left: 55px
+			.mini1
+				top: 120px
+			.mini2 
+				bottom: 245px
+				left: 410px
+				display: none
+
+	.bottom-callTo 
+		margin-left: 20px
+
+	// product list
+	.productBlock , .newsProd, .fishes
+    	padding: 5px
+
+@media only screen and (max-width : 1360px)
+	
+	.aboutBlock 
+		h2 
+			margin-left: 10px
+		.aboutContent 
+			p
+				width: 100%
+				max-width: 650px
+
+	.aboutBlock 
+		.animationBlock
+			width: 600px
+			img 
+				&:first-child
+					width: 450px
+			.img-abs 
+				width: 360px
+				top: -30px
+
+	.carousel 
+		.slide 
+			.legend
+				top: 70px
+				left: 200px
+			span 
+				top: 85px
+				width: 520px
+				left: 200px
+			.mini 
+				top: 90px
+				left: 55px
+			.mini1
+				top: 100px
+			.mini2 
+				bottom: 210px
+				left: 350px
+				display: none
+		.control-dots 
+			bottom: 50px
+
+	.bottom-callTo 
+		margin-left: 20px
+
+	// product list
+
+	.newsProd 
+		> div
+			flex-direction: $column
+			align-items: $center
+			img 
+				margin-top: 0
+
+	.fishes 
+		text-align: $center
+		margin-top: 0
+		.fishesContainer 
+			flex-direction: $column
+			align-items: $center
+			ul 
+				text-align: left
+				margin-top: 110px
+				margin-left: 0
+	.fishes2 
+		margin-top: 0
+		div 
+			flex-direction: $column 
+			align-items: $center
+		div 
+			>.position-rel
+				margin-top: 55px
+
+	.tabs 
+		background-image: unset
+		img 
+			display: none
+		.RRT__tabs 
+			justify-content: $center
+		
+@media only screen and (max-width : 1359px)
+	header 
+		width: 100%
+		height: 120px
+		.logo-block 
+			position: $absolute
+			left: 10px
+		.navbar 
+			background-image: unset
+			width: auto
+			background: #0263c5
+			width: 320px
+			height: 600px
+			position: absolute
+			right: 0
+			z-index: 1
+			margin: 0
+			padding-bottom: 20px
+			> div 
+				flex-direction: $column
+				margin: 35px 0 0 0
+				ul 
+					flex-direction: $column
+					margin-top: -20px
+			a.callTo 
+				margin-left: 60px
+			.langs 
+				margin-right: 0
+				margin-left: 60px
+		.show 
+			display: block
+		.hide 
+			display: none
+
+		.responsivMenuIcon 
+			display: block
+			float: right
+
 
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px)
 	/**/
 
+	.aboutBlock
+		> div 
+			flex-direction: $column
+			align-items: $center
+		.aboutContent 
+			p
+				width: 100%
+				max-width: 950px
+
+	.slider.demo-carousel 
+		display: none
+
+	.responsiveTable 
+		tbody 
+			tr 
+				.prodBtn
+					width: 150px
+
+	
+
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px)
 	/**/
+
+	// product list 
+	
+	.fishes 
+		.fishesContainer 
+			ul 
+				li 
+					p 
+						width: $w100
+						max-width: 830px
+	
+	.fishes2 
+		padding: 0 5px
+		p 
+			width: $w100
+			max-width: 860px
+		.block4 
+    		left: -210px
+
+	// product list
+
+	.responsiveTable 
+		tbody 
+			tr 
+				td 
+					font-size: 14px
+					.prodBtn
+						width: 120px
+
+	.tabs 
+		.RRT__panel 
+			// padding: 0 5px
+
+
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px)
 	/**/
 
-/* Extra Small Devices, Phones */
-@media only screen and (max-width : 480px)
-	/**/
+	.aboutBlock 
+		.animationBlock 
+			width: 300px
+			img
+				&:first-child 
+					width: 200px
+			.img-abs 
+				width: 220px 
+				top: 0 
+				left: 40px
+	
+
+	.callTo
+		img 
+			width: 100px
+
+	// product list 
+
+	
+
+	.responsiveTable 
+		tbody 
+			tr 
+				height: auto 
+				border: 2px solid #A5ADBF
+				margin-bottom: 12px
+				td 
+					font-size: 16px
+					&.pivoted
+						&:after 
+							border-right: none
+						.prodBtn
+							width: 100px
+
+	.newsProd 
+		margin-top: 20px
+		ul 
+			width: $w100
+			max-width: 605px
+			padding-left: 10px
+		.returned 
+			text-align: left
+		img 
+			width: $w100
+			max-width: 596px
+
+	.tabs 
+		.tabContainer 
+			.tab 
+				&:nth-child(1), &:nth-child(2),
+				&:nth-child(3), &:nth-child(4),
+				&:nth-child(5)
+					margin: 0 auto
 
 
-/* Custom, iPhone Retina */
-@media only screen and (max-width : 320px)
-	/**/
+@media only screen and (max-width : 600px)
+	.fishes 
+		.fishesContainer 
+			margin-top: 0
+			ul 
+				margin-top: 0
+				li 
+					p 
+						margin-bottom: 0
+			img, .block1, .block2
+				display: none
+	.fishes2 
+		img, .block3, .block4
+			display: none
+	.tabs 
+		margin-top: 0
+		.tabContainer 
+			.tab 
+				width: $w100
+				max-width: 300px
+				margin-left: 0
+			.RRT__tab--selected 
+				margin-top: 0
+			.RRT__accordion 
+				flex-direction: column
+				display: flex
+				align-items: center
+
+		.RRT__panel 
+				width: 98%
+				max-width: 580px
+				margin: auto
 
 
-/*==========  Mobile First  ==========*/
-
-/* Custom, iPhone Retina */
-@media only screen and (min-width : 320px)
-	/**/
 
 
-/* Extra Small Devices, Phones */
-@media only screen and (min-width : 480px)
-	/**/
-
-
-/* Small Devices, Tablets */
-@media only screen and (min-width : 768px)
-	/**/
-
-
-/* Medium Devices, Desktops */
-@media only screen and (min-width : 992px)
-	/**/
-
-
-/* Large Devices, Wide Screens */
-@media only screen and (min-width : 1200px)
-	/**/
 

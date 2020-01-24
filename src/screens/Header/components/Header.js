@@ -1,13 +1,24 @@
-import React from 'react';
+import React, { useState } from 'react';
 import logo from '../../../images/logo.svg';
 import { NavLink, Link } from 'react-router-dom';
-// import Navbar from '../../Navbar/components/Navbar';
 import './Header.sass';
 
+
 const Header = () => {
+
+    const [state, setState] = useState({ showMenu: false })
+
+  const toggleMenu = () => {
+    setState({
+      showMenu: !state.showMenu
+    })
+  }
+
+  const menuVis = state.showMenu ? 'show' : 'hide';
+
     return (
-        <div className="d-flex">
-            <div className="d-flex">
+        <>
+            <header className="d-flex justify-content--end">
                 <div className="logo-block">
                     <Link to="/" className="d-flex--fullcenter">
                         <img src={logo} className="App-logo" alt="logo" />
@@ -15,8 +26,14 @@ const Header = () => {
                     </Link>
                 </div>
                 
-                <div className="navbar d-flex">
-                    <div className="d-flex">
+                <div className='responsivMenuIcon' onClick={toggleMenu}>
+                    <span />
+                    <span />
+                    <span />
+                </div>
+                
+                <div className={`navbar d-flex ${menuVis}`}>
+                    <div className="d-flex justify-content--around w100">
                         <ul className="d-flex justify-content--between">
                             <li>
                                 <Link  to="/">главная</Link>
@@ -47,10 +64,11 @@ const Header = () => {
                     </div>
                     
                 </div>
-            </div>
+                
+            </header>
             
             
-        </div>
+        </>
     )
 }
 

@@ -17,6 +17,7 @@
             padding: 0 0 10px
             left: 284px
             margin: 0
+            font: normal 35px/42px Muli-SemiBold
             &:after
                 content: ""
                 border-bottom: 2px solid #00E4E4
@@ -28,18 +29,41 @@
             position: $absolute
             color: $light
             left: 284px
-            top: 280px
+            top: 240px
             width: 805px
             text-align: left
+            font: italic 19px/35px Muli-Italic
+            margin-top: 46px
     .thumbs-wrapper
         display: none
     .carousel-status 
         display: none
     .mini 
         width: 120px !important
-        position: absolute
+        position: $absolute
         left: 100px
         top: 225px
+        z-index: 1
+    .mini1 
+        width: 120px !important
+        position: $absolute
+        right: 82px
+        top: 170px
+        z-index: 1
+    .mini2
+        width: 120px !important
+        position: $absolute
+        bottom: 300px
+        width: 120px
+        left: 520px
+        z-index: 1
     .control-dots 
         bottom: 134px
+        padding-left: 115px
+        .dot 
+            width: 18px
+            height: 18px
+            opacity: 1
+            &.selected 
+                background: #00E4E4
         

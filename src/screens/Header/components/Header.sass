@@ -1,8 +1,7 @@
 @import '../../../sass/main'
 
-// lobo
+// logo
 .logo-block 
-    width: 461px
     margin-top: 30px
     img 
         height: 40px
@@ -10,9 +9,8 @@
     h1 
         text-transform: uppercase
         color: #0263C5
-        font-size: 30px
-        font-weight: normal
         margin: 0
+        font: 300 normal 30px/38px Muli-Regular
 
 .navbar 
     width: 1458px
@@ -21,18 +19,21 @@
     background-position: top
     background-repeat: no-repeat
     background-size: contain
+    margin-left: 3%
     > div 
         margin-top: 35px
     ul 
-        width: 815px
-        margin-top: 0
-        margin-left: 112px
+        margin-top: -17px
+        margin-left: 54px
         padding: $padding0
         li 
             a 
                 color: $light
                 text-transform: $capitalize
+                text-shadow: $textShadow
                 font-family: 'Muli-Regular'
+                font: normal normal 20px/65px Muli-Regular
+                padding: 5px 16px
                 &.navbar__link--active 
                     border-bottom: 4px solid  #00E4E4
                     transition: border-bottom .5s ease-in-out
@@ -40,11 +41,18 @@
                     
     a 
         &.callTo 
-            margin-left: 80px
+            margin-left: -80px
+            font: normal normal 20px/65px Muli_Bold
+            letter-spacing: 0
+            color: $light
+            text-shadow: $textShadow
+            margin-top: -16px
     .langs 
-        margin-left: 89px
+        margin-right: 141px
         color: $light
         width: 50px
+        font: normal normal 14px/18px Muli-SemilBold
+        margin-top: 5px
         button 
             border: none
             outline: none
@@ -53,3 +61,5 @@
             cursor: $pointer
             font-size: 14px
             padding: $padding0
+
+@import '../../../sass/media'

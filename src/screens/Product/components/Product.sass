@@ -3,9 +3,8 @@
 .fish 
     width: 150px
     height: 100px
-    margin-right: 75px
-    margin-left: 52px
-
+    left: 52px
+    top: -52px
 .productBlock 
     h2 
         font-size: 35px
@@ -13,7 +12,8 @@
         padding-bottom: 11px
         color: $dark
         position: $relative
-        font-family: 'Muli-SemiBold'
+        font: bold 35px/42px Muli-SemiBold
+        margin: 0
         &:after
             content: ""
             border-bottom: 2px solid $dark
@@ -25,3 +25,14 @@
         p 
             color: $dark
             font-size: 19px
+            margin-top: 67px
+.w100 
+    width: $w100
+    img 
+        &.fish-abs 
+            right: 58px
+            top: 90px
+            width: 157px
+            height: 102px
+
+@import '../../../sass/media'

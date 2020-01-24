@@ -1,14 +1,14 @@
 @import '../../../sass/main'
 
 
-.productTable 
+.responsiveTable 
     text-align: $center
     margin-top: 14px
     border-collapse: separate
     border-spacing: 0 12px
     tr 
         border-radius: 6px
-        td 
+        td.pivoted
             position: $relative
             &:after 
                 content: ""
@@ -34,7 +34,7 @@
         tr 
             border-radius: 6px
             height: 100px
-            td 
+            td.pivoted
                 color: $dark
             .prodBtn 
                 width: 233px
@@ -48,3 +48,6 @@
             .prodBtn 
                 background: transparent linear-gradient(89deg, #0263C5 0%, #00B9FF 58%, #00E4E4 100%) 0% 0% no-repeat padding-box
                 color: $light
+
+
+@import '../../../sass/media'

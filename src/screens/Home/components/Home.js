@@ -5,7 +5,7 @@ import './Home.sass';
 const Home = () => {
     return (
         <div className="d-flex--fullcenter">
-            <div className="center">
+            <div className="center" style={{textAlign: 'center'}}>
             
                 <h1>Home</h1>
             </div>
